@@ -13,7 +13,6 @@ jobs:
 
   unit-tests:
     name: Unit tests
-    needs: spotless
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -56,7 +55,6 @@ jobs:
 
   instrumentation-tests:
     name: Instrumentation tests
-    needs: spotless
     runs-on: macOS-latest
     timeout-minutes: 45
     strategy:

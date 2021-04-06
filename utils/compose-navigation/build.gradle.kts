@@ -1,6 +1,7 @@
 plugins {
   id("com.android.library")
   id("org.jetbrains.kotlin.android")
+  id("org.jetbrains.kotlin.kapt")
 }
 
 android {
@@ -28,4 +29,6 @@ android {
 dependencies {
   implementation("androidx.navigation:navigation-compose:1.0.0-alpha09")
   implementation("androidx.hilt:hilt-navigation-compose:1.0.0-alpha01")
+  kapt("com.google.dagger:dagger-compiler:2.33")
+  kapt("com.google.dagger:hilt-compiler:2.33-beta")
 }

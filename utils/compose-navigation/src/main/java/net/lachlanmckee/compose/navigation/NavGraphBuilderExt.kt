@@ -1,13 +1,23 @@
 package net.lachlanmckee.compose.navigation
 
+import android.content.Context
 import androidx.compose.runtime.Composable
 import androidx.hilt.navigation.compose.hiltNavGraphViewModel
 import androidx.lifecycle.ViewModel
 import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavDeepLink
 import androidx.navigation.NavGraphBuilder
+import androidx.navigation.NavHostController
 import androidx.navigation.compose.NamedNavArgument
 import androidx.navigation.compose.composable
+
+fun NavGraphBuilder.addNavigationFactoriesNavigation(
+  context: Context,
+  navController: NavHostController
+) {
+  hiltNavGraphNavigationFactories(context)
+    .addNavigation(this, navController)
+}
 
 inline fun <reified VM> NavGraphBuilder.viewModelComposable(
   route: String,

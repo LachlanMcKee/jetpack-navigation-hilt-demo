@@ -42,4 +42,5 @@ dependencies {
   implementation("com.google.dagger:hilt-android:2.33-beta")
   kapt("com.google.dagger:dagger-compiler:2.33")
   kapt("com.google.dagger:hilt-compiler:2.33-beta")
+  kapt(project(":utils:compose-navigation-compiler"))
 }

@@ -2,9 +2,9 @@ package net.lachlanmckee.jetpack.navigation.hilt.feature.feature1.di
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
-import net.lachlanmckee.compose.navigation.ComposeNavigationFactory
-import net.lachlanmckee.compose.navigation.HiltComposeNavigationFactory
-import net.lachlanmckee.compose.navigation.viewModelComposable
+import net.lachlanmckee.hilt.compose.navigation.factory.ComposeNavigationFactory
+import net.lachlanmckee.hilt.compose.navigation.factory.HiltComposeNavigationFactory
+import net.lachlanmckee.hilt.compose.navigation.factory.viewModelComposable
 import net.lachlanmckee.jetpack.navigation.hilt.feature.feature1.Feature1ViewModel
 import net.lachlanmckee.jetpack.navigation.hilt.feature.feature1.ui.Feature1
 import javax.inject.Inject

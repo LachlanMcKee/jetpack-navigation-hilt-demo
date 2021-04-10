@@ -29,7 +29,7 @@ android {
   }
 
   composeOptions {
-    kotlinCompilerExtensionVersion = "1.0.0-beta03"
+    kotlinCompilerExtensionVersion = "1.0.0-beta04"
   }
 
   buildTypes {
@@ -52,22 +52,23 @@ android {
 }
 
 dependencies {
-  implementation(project(":utils:compose-navigation"))
   implementation(project(":features:feature1"))
   implementation(project(":features:feature2"))
 
-  implementation("androidx.appcompat:appcompat:1.3.0-rc01")
-  implementation("androidx.activity:activity-compose:1.3.0-alpha05")
+  implementation("net.lachlanmckee:hilt-compose-navigation-factory:1.0.0-alpha01")
 
-  implementation("androidx.compose.ui:ui:1.0.0-beta03")
-  implementation("androidx.compose.foundation:foundation:1.0.0-beta03")
-  implementation("androidx.compose.material:material:1.0.0-beta03")
+  implementation("androidx.appcompat:appcompat:1.3.0-rc01")
+  implementation("androidx.activity:activity-compose:1.3.0-alpha06")
+
+  implementation("androidx.compose.ui:ui:1.0.0-beta04")
+  implementation("androidx.compose.foundation:foundation:1.0.0-beta04")
+  implementation("androidx.compose.material:material:1.0.0-beta04")
 
   // Dagger
-  implementation("com.google.dagger:dagger:2.33")
-  implementation("com.google.dagger:hilt-android:2.33-beta")
-  kapt("com.google.dagger:dagger-compiler:2.33")
-  kapt("com.google.dagger:hilt-compiler:2.33-beta")
+  implementation("com.google.dagger:dagger:2.34")
+  implementation("com.google.dagger:hilt-android:2.34-beta")
+  kapt("com.google.dagger:dagger-compiler:2.34")
+  kapt("com.google.dagger:hilt-compiler:2.34-beta")
   implementation("androidx.hilt:hilt-navigation-compose:1.0.0-alpha01")
 
   androidTestUtil("androidx.test:orchestrator:1.3.0")
@@ -75,5 +76,5 @@ dependencies {
   androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
   androidTestImplementation("androidx.test:runner:1.3.0")
   androidTestImplementation("androidx.test:rules:1.3.0")
-  androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.0.0-beta03")
+  androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.0.0-beta04")
 }

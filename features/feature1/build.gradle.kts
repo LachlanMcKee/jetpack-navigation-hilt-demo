@@ -22,25 +22,25 @@ android {
   }
 
   composeOptions {
-    kotlinCompilerExtensionVersion = "1.0.0-beta03"
+    kotlinCompilerExtensionVersion = "1.0.0-beta04"
   }
 }
 
 dependencies {
-  implementation(project(":utils:compose-navigation"))
-  implementation("androidx.compose.ui:ui:1.0.0-beta03")
-  implementation("androidx.compose.foundation:foundation:1.0.0-beta03")
-  implementation("androidx.compose.material:material:1.0.0-beta03")
-  implementation("androidx.compose.runtime:runtime-livedata:1.0.0-beta03")
+  implementation("net.lachlanmckee:hilt-compose-navigation-factory:1.0.0-alpha01")
+  implementation("androidx.compose.ui:ui:1.0.0-beta04")
+  implementation("androidx.compose.foundation:foundation:1.0.0-beta04")
+  implementation("androidx.compose.material:material:1.0.0-beta04")
+  implementation("androidx.compose.runtime:runtime-livedata:1.0.0-beta04")
   implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1")
   implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.3.1")
-  implementation("androidx.navigation:navigation-compose:1.0.0-alpha09")
+  implementation("androidx.navigation:navigation-compose:1.0.0-alpha10")
   implementation("androidx.hilt:hilt-navigation-compose:1.0.0-alpha01")
 
   // Dagger
-  implementation("com.google.dagger:dagger:2.33")
-  implementation("com.google.dagger:hilt-android:2.33-beta")
-  kapt("com.google.dagger:dagger-compiler:2.33")
-  kapt("com.google.dagger:hilt-compiler:2.33-beta")
-  kapt(project(":utils:compose-navigation-compiler"))
+  implementation("com.google.dagger:dagger:2.34")
+  implementation("com.google.dagger:hilt-android:2.34-beta")
+  kapt("com.google.dagger:dagger-compiler:2.34")
+  kapt("com.google.dagger:hilt-compiler:2.34-beta")
+  kapt("net.lachlanmckee:hilt-compose-navigation-factory-compiler:1.0.0-alpha01")
 }

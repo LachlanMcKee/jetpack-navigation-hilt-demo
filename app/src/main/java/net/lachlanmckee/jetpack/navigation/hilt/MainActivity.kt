@@ -17,7 +17,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.navigate
 import androidx.navigation.compose.rememberNavController
 import dagger.hilt.android.AndroidEntryPoint
-import net.lachlanmckee.compose.navigation.addNavigationFactoriesNavigation
+import net.lachlanmckee.hilt.compose.navigation.factory.addNavigationFactoriesNavigation
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
